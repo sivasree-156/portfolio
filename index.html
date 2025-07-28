@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sivasree</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  
+    <section class="mainpage">
+    <nav>
+        <ul type="none" >
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+<section class="home" id="home">
+    
+    <div class="home-content">
+    <h2>Welcome to my
+Portfolio!</h2><br>
+    <p style="color: black;">A dedicated front-end developer crafting dynamic and responsive user interfaces that combine functionality with visual appeal. I bring a strong foundation in HTML, CSS, JavaScript, Powerbi and SQL, with a focus on building engaging digital experiences.</p>
+    <div class="social-links">
+      <a href="https://github.com/sivasree-156" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="50" height="50">
+
+    
+<a href="mailto:suba15062000@gmail.com"  target="_blank">
+  <img src="https://icon-library.com/images/black-and-white-email-icon/black-and-white-email-icon-14.jpg" alt="mail" width="60" height="60" id="ma">
+</a>
+
+      
+      <a href="https://www.linkedin.com/in/sivasree156/" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Linkedin_circle_black-512.png?20190209090242" alt="LinkedIn" width="50" height="50">
+</a>
+
+    </div>
+  </div>
+  <div class="home-image">
+    <img src="./ai.png" alt="Sivasree Photo" height="700" width="700"  /> 
+</body>
+  </div>
+    </section>
+    </section>
+    <section class="about" id="about">
+
+    
+  </div>
+  <h2>About Me</h2>
+  <p>
+    Hello, I’m Sivasree S, a detail-oriented and passionate front-end developer with a strong foundation in HTML, CSS, JavaScript, Powerbi and SQL. I specialize in creating responsive, user-friendly web interfaces that blend functionality with visual design. With a continuous drive to learn and grow, I am expanding my expertise toward full-stack development while staying updated with the latest industry trends. Outside of development, I enjoy thoughtful moments over a cup of tea and following the world of cricket. I am committed to delivering clean, maintainable code and contributing to impactful, real-world digital solutions.</p>
+  <h3>Tech Stack I Work With:</h3>
+  <div class="tech-icons">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="css">
+<img src="https://icon2.cleanpng.com/20180917/rgp/kisspng-javascript-logo-product-design-brand-1713939908433.webp" alt="js"> 
+<img src="https://www.clipartmax.com/png/middle/243-2432711_azure-sql-database-icon.png" alt="sql">
+<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/power-bi-icon.png" alt="powerbi">
+<img src="https://static.vecteezy.com/system/resources/previews/047/750/220/non_2x/excel-icon-transparent-background-free-png.png" alt="excel">
+    </section>
+
+   <section class="projects" id="projects">
+  <h2>My Projects</h2>
+  <div class="project-container">
+    <div class="title">
+        <h1>Durign Accademic:</h1> 
+    </div>
+   
+    <div class="project-card">
+      <h3>IoT Project</h3>
+      <p>An automatically operate railway gates using sensors for enhanced safety and efficiency.</p>
+    </div>
+    <div class="project-card">
+      <h3>CLV Project</h3>
+      <p>Data science project that uses machine learning and analytics to predict the long-term value a customer brings to a business.</p>
+    </div>
+    <div class="project-card">
+      <h3>Wildlife Emergency App</h3>
+      <p>Flutter app designed to quickly report wildlife emergencies and connect users with forest officials.</p>
+    </div>
+  </div>
+   <div class="project-container">
+   <div class="title">
+        <h1>Other than Accademic:</h1> 
+    </div>
+    <div class="project-card">
+  <h3>YouTube Clone</h3>
+  <p>A responsive video streaming site clone using HTML, CSS & JavaScript with basic UI features.</p>
+</div>
+<div class="project-card">
+  <h3>HR Attrition Analysis</h3>
+  <p>Designed a Power BI dashboard using Star Schema to track attrition across departments, roles, and tenure—helping HR identify risks and improve retention.</p>
+</div>
+</div>
+
+ <div class="project-container">
+  <div class="title">
+        <h1>paper presentation:</h1>
+  </div>
+  
+  <div class="project-card">
+  <h3>Conference Presentation</h3>
+  <p>Presented on “Empowered Data Ownership with Decentralized Cookie Management” at the 7th International Conference for Phoenixes on Emerging Trends in Engineering & Management, Panimalar Engineering College.</p> 
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Subject" />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+ <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll("section").forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+
+</body>
+</html>
